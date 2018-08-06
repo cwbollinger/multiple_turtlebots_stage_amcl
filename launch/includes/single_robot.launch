@@ -4,7 +4,7 @@
  <arg name="initial_pose_y" default="0"/>
  <arg name="initial_pose_a" default="0"/>
  
- <node pkg="move_base" type="move_base" respawn="false" name="move_base_node" output="screen">
+ <node pkg="move_base" type="move_base" respawn="false" name="move_base" output="screen">
       <remap from="map" to="/map" />
       <param name="controller_frequency" value="10.0" />
       <rosparam file="$(find multiple_robots_stage)/params/move_base_config/costmap_common_params.yaml" command="load" ns="global_costmap" />
